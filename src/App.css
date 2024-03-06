@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+*{
+    padding: 0px;
+    margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.padding-section-medium{
+    background-color: #121e2c;
+    padding: 36px;
+    color: #d8e0e9;
+}
+.header{
+    display: flex;
+ 
+    justify-content: space-between;
+    width: 400px;
+    text-align: justify;
+    gap:10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.home_header-grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.earn-income{
+width: 300px;
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-size: 3.4375rem;
+        font-weight: 700;
+        line-height: 1.1;
+    
+}
+
+.download-app-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+}
+.info-text{
+    padding-right: 12px;
+    border-right: 4px dashed yellow;
+}
+
+.header-cta-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:24px;
+    margin-top:24px;
+}
+
+  
+
+
+@media only screen and (max-width: 600px) {
+    .home_header-grid {
+      display: flex;
+      flex-direction: column;
+
+      
+    }
+    .home_header-left-wrapper {
+      order: 2; /* Change the order for mobile */
+    }
+    .header-right-wrapper {
+      order: 1; /* Change the order for mobile */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .shark{
+    
+        max-width:300px;
+    }
+
+    .earn-income{
+        text-align: center; /* Center text */
+                margin-top: 0;
+                
+                font-size: 1.9rem;
+                
+            
+
+        }
+
+       
+        .header{
+            width: 300px;
+            font-size: 0.8rem;
+            
+        }
+
+
+        .download-app-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:10px;
+        }
+        .download-app-wrapper img{
+            width: 80px!important;
+        }
+        .header-cta-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:10px;
+        }
+        .home_header-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center items horizontally */
+          }
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
